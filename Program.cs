@@ -4,7 +4,14 @@
     {
         static void Main(string[] args)
         {
-            
+            try
+            {
+                Presentacion.Principal();
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("Exception: {0}", ex.Message);
+            }
         }
     }
 }
